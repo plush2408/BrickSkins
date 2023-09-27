@@ -9,7 +9,7 @@ res = requests.get('https://api.bitskins.com/market/skin/730', headers=headers)
 response = json.loads(res.text)
 
 if res.status_code == 200:
-    with open('bitskins_data.csv', 'w', newline='') as csvfile:
+    with open('bitskins_data.csv', 'w', newline='', encoding='utf-8') as csvfile:  # Hier den Zeichensatz auf UTF-8 setzen
         fieldnames = ['name', 'suggested_price']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
