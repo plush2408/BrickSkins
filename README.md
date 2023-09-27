@@ -1,2 +1,2 @@
 # BrickSkins
-SkinSammlerSyndikat
+get API here: https://bitskins.com/profile
